@@ -1,0 +1,24 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: 002222#;
+}
+.cabecera {
+    background-color: blue;
+    display: block;
+    width: 1000px;
+    height: 150px;
+}
+.bot_ini{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.bot_ini li {
+  display: inline-block;
+  background: 220099#;
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
