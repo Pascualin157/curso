@@ -1,44 +1,40 @@
 <html>
 <head>
     <link href="{{url_for('static', filename='css/madre.css') }}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/paginas.css') }}" rel="stylesheet">
 
     <script src="escrutinio.js"></script>
 </head>
 <body>
-<div class="cabecera">
-    <ol class="bot_ini">
-        <ul>
-           <a href="html/ini_fiso.html" target="_self"></a>
-        </ul>
-        <ul>
-            <a href="html/ini_equipo.html" target="_self">numeros</a>
-        </ul>
-        <ul>
-            <a href="html/ini_estadis.html" target="_self">trabajo 2</a>
-        </ul>
-        <ul>
-            <a href="html/ini_contac.html" target="_self">Contactar</a>
-        </ul>
-       
-    </ol>
-    <ol class="bot_pena">
-        <ul>
-            <a href="html/pena_contac.html" target="_self">enlace 01</a>
-        </ul>
-        <ul>
-            <a href="html/pena_contac.html" target="_self">enlace 02</a>
-        </ul>
-        <ul>
-            <a href="html/pena_contac.html" target="_self">enlace 03</a>
-        </ul>
-    </ol>
-</div>
-<div class="cuerpo">
-    {% block content %}
-    {% endblock %}
-</div>
-<div class="pie">
-    Esto es el píe
+<div class="general">
+    <div class="cabecera">
+        <ol class="bot_ini">
+            <ul>
+                <a href="/" target="_self">inicio</a>
+            </ul>
+            <ul>
+            <a href="prac_js" target="_self">practica JS</a>
+            </ul>
+            <ul>
+                <a href="prac_PY" target="_self">practica PY</a>
+            </ul>
+            <ul>
+                <a href="prac_numpy" target="_self">practicas numpy</a>
+            </ul>
+            <ul>
+                <a href="prac_pandas" target="_self">practicas pandas</a>
+            </ul>
+        </ol>
     </div>
+    <div class="cuerpo">
+<img src="img/log_js.png">
+        {% block content %}
+
+         {% endblock %}
+    </div>
+    <div class="pie">
+     <h4>Página realizada por Alfredo Martínez Pascucal</h4>
+    </div>
+</div>
 </body>
 </html>
